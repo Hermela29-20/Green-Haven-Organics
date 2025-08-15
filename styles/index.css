@@ -162,3 +162,65 @@ p{
     font-size: 20px;
   }
 }
+
+.why-organic {
+  padding: 80px 40px;
+  background-color: #F8F8F0;
+  text-align: center;
+}
+
+.why-organic h2 {
+  font-size: 42px;
+  margin-bottom: 40px;
+  font-family: serif;
+}
+
+.icons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Strict 4-column grid */
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.icon-block {
+  padding: 40px 25px;
+  transition: all 0.3s ease;
+}
+
+
+.icon-block img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 25px;
+  object-fit: contain;
+}
+
+.icon-block h3 {
+  font-size: 22px;
+  color: #3A6A31;
+  margin-bottom: 15px;
+}
+
+.icon-block p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #5A5A5A;
+  width: 200px;
+}
+
+@media (max-width: 900px) {
+  .icons-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .icons-grid {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+    max-width: 400px;
+  }
+  
+  .why-organic {
+    padding: 60px 20px;
+  }
+}
