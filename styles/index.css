@@ -78,3 +78,66 @@ html {
     justify-content: center;
   }
 }
+.hero {
+  background-image: url('../images/StockCake-Idyllic\ Farm\ Landscape_1755018101.jpg');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;               
+  display: flex;
+  align-items: flex-start;        
+  text-align: left;
+  padding: 40px;
+  padding-top: 60px;
+  z-index: 0;
+  margin-top: 10px;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.3); 
+  z-index: -1;
+}
+
+h1{
+  font-size: 56px;
+  color:#173D0A;
+  line-height: 0.5;
+}
+
+p{
+  font-size: 26px;
+  color:#1D4011;
+  width:500px;
+
+}
+
+.subscribe {
+  background-color: #3A6A31; 
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px 28px; 
+  cursor: pointer;
+  transition: all 0.3s ease; 
+  box-shadow: 0 4px 8px rgba(58, 106, 49, 0.2); 
+}
+
+.subscribe:hover {
+  background-color: #2A4A21; 
+  transform: translateY(-2px); 
+  box-shadow: 0 6px 12px rgba(58, 106, 49, 0.3);
+}
+
+.subscribe:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(58, 106, 49, 0.2);
+}
